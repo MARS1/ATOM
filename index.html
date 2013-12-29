@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATOM | BCI Self-Service Pilot</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/animatedHeader.css">
+    <link rel="stylesheet" href="css/slidePushMenus.css">
+    <script src="js/modernizr.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+  <body class="cbp-spmenu-push">
+  
+    <div class="container">
+
+      <div class="row">
+          <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+            <h3>Resources</h3>
+            <a href="#">Tools</a>
+            <a href="#">Communities</a>
+            <a href="#">Trainings</a>
+            <a href="#">Contact Pilots</a>
+          </nav>
+      </div>
+    
+      <div class="header">
+        <div class="row">
+            <div class="logoCtr">
+              <img class="logo small-push-2 large-push-4" src="img/logo.png" alt="Atom - Self-Service Pilot">
+            </div>
+        </div>
+      </div>
+
+     
+<!-- NAVIGATION -->
+
+      <div class="bg-teal">
+        <div class="row">
+          <div class="small-12 large-12">
+              <ul class="large-block-grid">
+                <li><button>learn about innovation</button></li>
+                <li><button>learn about pilots</button></li>
+                <li><button id="showRight">Resources</button></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/classie.js"></script>
+    <script>
+      var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+        showRight = document.getElementById( 'showRight' ),
+        body = document.body;
+
+      showRight.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuRight, 'cbp-spmenu-open' );
+        disableOther( 'showRight' );
+      };
+
+      function disableOther( button ) {
+        if( button !== 'showRight' ) {
+          classie.toggle( showRight, 'disabled' );
+        }
+      }
+    </script>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+</html>
