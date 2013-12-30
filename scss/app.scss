@@ -85,6 +85,11 @@ div.bg-teal {
 				background: $mint;
 				color: $teal;
 			}
+			button.rtMenu:after {
+			content: "\279D";
+			color: $white;
+			margin: 0 0 0 10px;
+		}
 
 		}
 	}
