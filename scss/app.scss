@@ -28,7 +28,7 @@ $black: #000000;
 
 
 
-// Homepage
+// Header
 
 .header {
 	height: 188px;
@@ -40,18 +40,26 @@ $black: #000000;
 div.logoCtr {
 	position: relative;
 	margin: 0 auto;
-	img.logo {
-		padding: 40px 0 0 0;
+
+	div.geometric:before {
+		content: url(../img/geometric.png);
+		position: absolute;
+		left: -520px;
+		opacity: 0.4;
+		z-index:20;
+		a.logo {
+			z-index: 40;
+		}
 	}
 }
 
-	img:before {
-	content: url(img/geometric.png);
-	position: absolute;
-	top: 0;
-	left: -240px;
-	opacity: 0.5;
-}
+// 	img:before {
+// 	content: url(img/geometric.png);
+// 	position: absolute;
+// 	top: 0;
+// 	left: -240px;
+// 	opacity: 0.5;
+// }
 
 // Navigation
 
@@ -94,6 +102,26 @@ div.bg-teal {
 		}
 	}
 
+}
+
+// Sub Menu
+
+nav.subMenu {
+	button {
+	margin: 0;
+	padding: 1em;
+	float: left;
+	}
+	h5 {
+	margin: 0;
+	padding: 0.7em 0.75em;
+	float: right;
+	background: $teal;
+	color: $white;
+	}
+	a {
+		clear:both;
+	}
 }
 
 // BLOCK 1

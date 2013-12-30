@@ -16,8 +16,9 @@
     <div class="container">
 
       <div class="row">
-          <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-            <h3>Resources</h3>
+          <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right subMenu" id="cbp-spmenu-s2">
+            <button class="small-3 large-3" id="showRightButton">X</button>
+            <h5 class="small-9 large-9">Resources</h5>
             <a href="#">Tools</a>
             <a href="#">Communities</a>
             <a href="#">Trainings</a>
@@ -30,7 +31,11 @@
             <div class="logoCtr">
               <div class="row">
                 <div class="small-10 large-4 small-centered columns">
-                  <a href="index.html"><img class="logo" src="img/logo.png" alt="Atom - Self-Service Pilot"></a>
+                  <div class="geometric">
+                    <a class="logo" href="index.html">
+                      <img style="padding:35px 0 0 0;" src="img/logo.png" alt="Atom - Self-Service Pilot">
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -162,12 +167,19 @@
     <script>
       var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
         showRight = document.getElementById( 'showRight' ),
+        showRightButton =document.getElementById('showRightButton'),
         body = document.body;
 
       showRight.onclick = function() {
         classie.toggle( this, 'active' );
         classie.toggle( menuRight, 'cbp-spmenu-open' );
         disableOther( 'showRight' );
+      };
+
+      showRightButton.onclick = function() {
+        classie.toggle( this, 'active');
+        classie.toggle( menuRight, 'cbp-spmenu-open');
+        disableOther( 'showRight');
       };
 
       function disableOther( button ) {
