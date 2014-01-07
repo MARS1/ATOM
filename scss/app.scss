@@ -124,11 +124,89 @@ nav.subMenu {
 	}
 }
 
-// BLOCK 1
+//BLOCK 1 NEW
+
 .block1-bg {
-	height: 400px;
+	height: 364px;
 	background: $lt-grey;
+	margin: 0;
+	padding: 0;
 }
+
+ul.block1 {
+	height: auto;
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	a {
+
+		li.block1-rt {
+			background-image: url("../img/img-blk1-rt.jpg");
+			background-size: cover;
+			min-height: 364px;
+		}
+		&:hover {
+			opacity: .75;
+			transition: 1s;
+		}
+		img {
+			margin-top: 15%;
+		}
+		h5 {
+			margin-top: 15%;
+		}
+	}
+	li  {
+			list-style-type: none;
+			padding: 4em;
+			float: left;
+			min-height: 242px;
+			margin: 0;
+			img {
+			width: 90px;
+			display: inline;
+			float: left;
+			padding: 0 20px;
+			}
+		}
+	li.block1-lft {
+		background-image: url("../img/img-blk1-lft.jpg");
+		background-size: cover;
+		min-height: 364px;
+		a {
+			text-transform: uppercase;
+			color: $yellow;
+			width: 85%;
+		}
+		a:after {
+			content: "\279D";
+			color: $yellow;
+			margin: 0 0 0 10px;
+		}
+		a:hover {
+			background: $teal;
+			color: $white;
+		}
+	}
+	h5 {
+		text-transform: uppercase;
+		color: $white;
+	}
+	h6 {
+		text-align: center;
+	}
+	p {
+			line-height: 1.5em;
+			color: $white;
+			width: 77%;
+			clear: both;
+	}
+}
+
+
+
+// BLOCK 1
 
 .block1a {
 	float: left;
@@ -175,7 +253,7 @@ nav.subMenu {
 .block1b {
 	float: left;
 	width: 50%;
-	div.block1-lft {
+	div.block1-rt {
 		min-height: 400px;
 		max-height: auto;
 		background-image: url("../img/img-blk1-rt.jpg");
@@ -240,11 +318,11 @@ nav.subMenu {
 
 .block3 {
 	height: auto;
-	// clear: both;
 	ul {
 		display: inline-block;
 		margin: 0;
 		padding: 0;
+		width: 100%;
 		a {
 			color: $grey;
 			font-size: 1.125rem;
@@ -256,7 +334,7 @@ nav.subMenu {
 			li {
 				list-style-type: none;
 				border-right: 1px solid $lt-grey;
-				padding: 5em;
+				padding: 5em 5em 2em 5em;
 				float: left;
 				min-height: 442px;
 				margin: 0;
@@ -273,8 +351,8 @@ nav.subMenu {
 			background: $teal;
 		}
 		.icon-blk3lft {
-			width: 90px;
-			margin: 30px 0 30px 0;
+			width: 120px;
+			margin: 60px 0 25px 0;
 		}
 		.icon-blk3mid {
 			width: 100px;
