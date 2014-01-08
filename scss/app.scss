@@ -27,6 +27,12 @@ $white: #ffffff;
 $black: #000000;
 
 
+///////////////////////////////////////
+
+	//HEADER & NAVIGATION
+
+///////////////////////////////////////
+
 
 // Header
 
@@ -49,20 +55,15 @@ div.logoCtr {
 		z-index:20;
 		a.logo {
 			z-index: 40;
-		}
-		&:hover {
+			opacity: 100;
+			img:hover {
 			transition: 1s;
+			opacity: .5;
+			}
 		}
 	}
 }
 
-// 	img:before {
-// 	content: url(img/geometric.png);
-// 	position: absolute;
-// 	top: 0;
-// 	left: -240px;
-// 	opacity: 0.5;
-// }
 
 // Navigation
 
@@ -127,7 +128,13 @@ nav.subMenu {
 	}
 }
 
-//BLOCK 1 NEW
+///////////////////////////////////////
+
+	//HOME PAGE
+
+///////////////////////////////////////
+
+//BLOCK 1
 
 .block1-bg {
 	height: 364px;
@@ -209,93 +216,6 @@ ul.block1 {
 }
 
 
-
-// BLOCK 1
-
-.block1a {
-	float: left;
-	width: 50%;
-	div.block1-lft {
-		min-height: 400px;
-		max-height: auto;
-		background-image: url("../img/img-blk1-lft.jpg");
-		background-size: cover;
-		img {
-			width: 90px;
-			display: inline;
-			float: left;
-			padding: 0 20px;
-		}
-		h5 {
-		text-transform: uppercase;
-		color: $white;
-		}
-		p {
-			line-height: 1.5em;
-			color: $white;
-			width: 65%;
-			clear: both;
-		}
-		a {
-			text-transform: uppercase;
-			color: $yellow;
-			width: 85%;
-		}
-		a:after {
-			content: "\279D";
-			color: $yellow;
-			margin: 0 0 0 10px;
-		}
-		a:hover {
-			background: $teal;
-			color: $white;
-		}
-	}
-	
-}
-
-.block1b {
-	float: left;
-	width: 50%;
-	div.block1-rt {
-		min-height: 400px;
-		max-height: auto;
-		background-image: url("../img/img-blk1-rt.jpg");
-		background-size: cover;
-		img {
-			width: 100px;
-			display: inline;
-			float: left;
-			padding: 0 20px;
-		}
-		h5 {
-		text-transform: uppercase;
-		color: $white;
-		}
-		p {
-			line-height: 1.5em;
-			color: $white;
-			width: 65%;
-			clear: both;
-		}
-		a {
-			text-transform: uppercase;
-			color: $yellow;
-			width: 85%;
-		}
-		a:after {
-			content: "\279D";
-			color: $yellow;
-			margin: 0 0 0 10px;
-		}
-		a:hover {
-			background: $teal;
-			color: $white;
-		}
-	}
-	
-}
-
 // VIDEO BLOCK
 
 .block2 {
@@ -371,6 +291,102 @@ ul.block1 {
 	}
 }
 
+///////////////////////////////////////
+
+	//INNOVATION PAGE
+
+///////////////////////////////////////
+
+
+.container-innovation {
+	// padding: 0 0 20%;
+}
+
+//BLOCK 1
+
+.innovation-block1-bg {
+	height: 364px;
+	margin: 0;
+	padding: 0;
+}
+
+ul.innovation-block1 {
+	height: auto;
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	a {
+		li.block1-rt {
+			background-image: url("../img/img-blk1-rt.jpg");
+			background-size: cover;
+			min-height: 364px;
+			transition: 1s;
+		}
+		&:hover {
+			opacity: .875;
+			transition: 1s;
+		}
+		img {
+			margin-top: 15%;
+		}
+		h5 {
+			margin-top: 15%;
+		}
+	}
+	li  {
+			list-style-type: none;
+			padding: 4em;
+			float: left;
+			min-height: 242px;
+			margin: 0;
+			img {
+			width: 90px;
+			display: inline;
+			float: left;
+			padding: 0 20px;
+			}
+		}
+	li.block1-lft {
+		background-image: url("../img/img-blk1-lft.jpg");
+		background-size: cover;
+		min-height: 364px;
+		a {
+			text-transform: uppercase;
+			color: $yellow;
+			width: 85%;
+		}
+		a:after {
+			content: "\279D";
+			color: $yellow;
+			margin: 0 0 0 10px;
+		}
+		a:hover {
+			background: $teal;
+			color: $white;
+		}
+	}
+	h5 {
+		text-transform: uppercase;
+		color: $white;
+	}
+	h6 {
+		text-align: center;
+	}
+	p {
+			line-height: 1.5em;
+			color: $white;
+			width: 77%;
+			clear: both;
+	}
+}
+
+///////////////////////////////////////
+
+	//FOOTER
+
+///////////////////////////////////////
+
 .blockFooter {
 	background: $yellow;
 	footer {
@@ -389,6 +405,13 @@ ul.block1 {
 		}
 	}
 }
+
+
+///////////////////////////////////////
+
+	//MISC
+
+///////////////////////////////////////
 
 // MARGIN AND PADDING
 
