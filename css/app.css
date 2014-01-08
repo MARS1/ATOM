@@ -28,6 +28,8 @@ div.logoCtr {
     z-index: 20; }
     div.logoCtr div.geometric:before a.logo {
       z-index: 40; }
+    div.logoCtr div.geometric:before:hover {
+      transition: 1s; }
 
 div.bg-teal {
   border-top: 1px solid #93efe2;
@@ -92,7 +94,7 @@ ul.block1 {
     background-size: cover;
     min-height: 364px; }
   ul.block1 a:hover {
-    opacity: .75;
+    opacity: .875;
     transition: 1s; }
   ul.block1 a img {
     margin-top: 15%; }
@@ -241,7 +243,9 @@ ul.block1 {
         border-right: none; }
     .block3 ul li:hover {
       color: white;
-      background: #5bc3b4; }
+      background: #5bc3b4;
+      opacity: .875;
+      transition: 1s; }
     .block3 ul .icon-blk3lft {
       width: 120px;
       margin: 60px 0 25px 0; }

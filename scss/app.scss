@@ -50,6 +50,9 @@ div.logoCtr {
 		a.logo {
 			z-index: 40;
 		}
+		&:hover {
+			transition: 1s;
+		}
 	}
 }
 
@@ -147,7 +150,7 @@ ul.block1 {
 			min-height: 364px;
 		}
 		&:hover {
-			opacity: .75;
+			opacity: .875;
 			transition: 1s;
 		}
 		img {
@@ -349,6 +352,8 @@ ul.block1 {
 		li:hover {
 			color: $white;
 			background: $teal;
+			opacity: .875;
+			transition: 1s;
 		}
 		.icon-blk3lft {
 			width: 120px;
