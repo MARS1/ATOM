@@ -178,74 +178,121 @@ a.btmLinks {
     width: 173px;
     margin: 10% 30%; }
 
+.innovation-body {
+  height: 100%; }
+
+.container-innovation {
+  background-image: url("../img/innovation.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center; }
+
 .innovation-block1-bg {
-  height: 364px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(20, 0, 0, 0.6); }
+
+.innovation-blk2-bg {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: #48a9cd;
+  position: relative; }
+  .innovation-blk2-bg img.icon-atom {
+    position: absolute;
+    top: -175px;
+    right: -150px;
+    transition: 1s linear;
+    width: 350px; }
+
+.innovation-blk3-bg {
+  width: 100%;
+  height: auto;
   margin: 0;
   padding: 0; }
 
-ul.innovation-block1 {
+ul.innovation-block {
   height: auto;
   display: inline-block;
   width: 100%;
   margin: 0;
   padding: 0; }
-  ul.innovation-block1 a li.block1-rt {
-    background-image: url("../img/img-blk1-rt.jpg");
-    background-size: cover;
+  ul.innovation-block li.innovation-block {
     min-height: 364px;
-    transition: 1s; }
-  ul.innovation-block1 a:hover {
-    opacity: .875;
-    transition: 1s; }
-  ul.innovation-block1 a img {
-    margin-top: 15%; }
-  ul.innovation-block1 a h5 {
-    margin-top: 15%; }
-  ul.innovation-block1 li {
-    list-style-type: none;
-    padding: 4em;
-    float: left;
-    min-height: 242px;
+    transition: 1s;
     margin: 0; }
-    ul.innovation-block1 li img {
-      width: 90px;
-      display: inline;
-      float: left;
-      padding: 0 20px; }
-  ul.innovation-block1 li.block1-lft {
-    background-image: url("../img/img-blk1-lft.jpg");
-    background-size: cover;
-    min-height: 364px; }
-    ul.innovation-block1 li.block1-lft a {
-      text-transform: uppercase;
-      color: #efe24e;
-      width: 85%; }
-    ul.innovation-block1 li.block1-lft a:after {
-      content: "\279D";
-      color: #efe24e;
-      margin: 0 0 0 10px; }
-    ul.innovation-block1 li.block1-lft a:hover {
-      background: #5bc3b4;
-      color: white; }
-  ul.innovation-block1 h5 {
-    text-transform: uppercase;
-    color: white; }
-  ul.innovation-block1 h6 {
-    text-align: center; }
-  ul.innovation-block1 p {
+    ul.innovation-block li.innovation-block a.a-play img.play {
+      width: 250px;
+      opacity: .675; }
+    ul.innovation-block li.innovation-block a.a-play img:hover {
+      background: none;
+      opacity: 1;
+      transition: 1s; }
+    ul.innovation-block li.innovation-block a:after {
+      content: ""; }
+    ul.innovation-block li.innovation-block a:hover {
+      background: none; }
+    ul.innovation-block li.innovation-block ul.inner {
+      padding: 0 0 0 2%; }
+      ul.innovation-block li.innovation-block ul.inner li {
+        list-style-type: none;
+        color: black;
+        font-weight: normal; }
+        ul.innovation-block li.innovation-block ul.inner li a {
+          text-transform: uppercase;
+          color: #efe24e;
+          width: 85%; }
+        ul.innovation-block li.innovation-block ul.inner li a:after {
+          content: "\279D";
+          color: #efe24e;
+          margin: 0 0 0 10px; }
+        ul.innovation-block li.innovation-block ul.inner li a:hover {
+          background: #5bc3b4;
+          color: white;
+          transition: 1s; }
+      ul.innovation-block li.innovation-block ul.inner li:before {
+        content: url(../img/svg/arrow-right.svg);
+        width: 10px;
+        padding-right: 10px; }
+    ul.innovation-block li.innovation-block ul.dark li {
+      color: black; }
+    ul.innovation-block li.innovation-block ul.light li {
+      color: #93efe2; }
+  ul.innovation-block h3 {
+    margin-top: 3%;
+    padding: 0;
+    color: #efe24e; }
+  ul.innovation-block p {
     line-height: 1.5em;
     color: white;
-    width: 77%;
-    clear: both; }
+    width: 70%;
+    clear: both;
+    margin-top: 1%; }
+  ul.innovation-block a {
+    text-transform: uppercase;
+    color: #efe24e;
+    width: 85%; }
+  ul.innovation-block a:after {
+    content: "\279D";
+    color: #efe24e;
+    margin: 0 0 0 10px; }
+  ul.innovation-block a:hover {
+    background: #5bc3b4;
+    color: white; }
 
 .blockFooter {
-  background: #efe24e; }
+  background: #efe24e;
+  padding: 0;
+  margin: 0; }
   .blockFooter footer {
     height: 70px;
-    text-align: center; }
+    text-align: center;
+    padding: 25px 0 0 0;
+    margin: 0; }
     .blockFooter footer a {
-      color: #b4a601;
-      padding: 0 5px; }
+      color: #b4a601; }
     .blockFooter footer a:hover {
       background: #5bc3b4;
       color: white; }
