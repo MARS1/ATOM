@@ -148,6 +148,7 @@ ul.block1 {
 			background-image: url("../img/img-blk1-rt.jpg");
 			background-size: cover;
 			min-height: 364px;
+			transition: 1s;
 		}
 		&:hover {
 			opacity: .875;
