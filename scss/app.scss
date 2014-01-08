@@ -138,7 +138,6 @@ nav.subMenu {
 
 .block1-bg {
 	height: auto;
-	background: $lt-grey;
 	margin: 0;
 	padding: 0;
 }
@@ -156,16 +155,21 @@ ul.block1 {
 			background-size: cover;
 			min-height: 364px;
 			transition: 1s;
+			padding: 4em;
 		}
 		&:hover {
 			opacity: .875;
 			transition: 1s;
 		}
 		img {
-			margin-top: 15%;
+			margin-top: 10%;
+			margin-bottom: 10%;
 		}
 		h5 {
-			margin-top: 15%;
+			margin-top: 10%;
+		}
+		h6 {
+			text-align: left;
 		}
 	}
 	li  {
@@ -210,84 +214,53 @@ ul.block1 {
 	p {
 			line-height: 1.5em;
 			color: $white;
-			width: 77%;
+			width: 67%;
 			clear: both;
 	}
 }
 
 
-// VIDEO BLOCK
-
-.block2 {
-	clear:both;
-	background: $lt-grey;
-	div.block2Full {
-	height: 216px;
-	a:hover {
-
-		}
-		h3 {
-			text-align: center;
-			color: $grey;
-		}
-		h6 {
-			color: $blue-grey;
-			text-transform: lowercase;
-			text-align: center;
-		}
-	}
-}
-
-// 3 BLOCK 
-
-.block3 {
-	height: auto;
-	ul {
-		display: inline-block;
+a.btmLinks {
+	color: $grey;
+	font-size: 1.125rem;
+	font-family: "Brandon";
+	text-transform: uppercase;
+	clear: both;
+	text-align: center;
+	li {
+		list-style-type: none;
+		border-right: 1px solid $lt-grey;
+		padding: 10% 15%;
+		float: left;
+		min-height: 100%;
 		margin: 0;
-		padding: 0;
-		width: 100%;
-		a {
-			color: $grey;
-			font-size: 1.125rem;
-			font-family: "Brandon";
-			text-transform: uppercase;
-			clear: both;
-			text-align: center;
-			// float: left;
-			li {
-				list-style-type: none;
-				border-right: 1px solid $lt-grey;
-				padding: 5em 5em 2em 5em;
-				float: left;
-				min-height: 442px;
-				margin: 0;
-				img {
-					padding: 0 0 40px 0;
-				}
-			}
-			li.last {
-				border-right: none;
-			}
+		img {
+			padding: 0;
 		}
-		li:hover {
-			color: $white;
-			background: $teal;
-			opacity: .875;
-			transition: 1s;
+		span {
+			display: block;
 		}
-		.icon-blk3lft {
-			width: 120px;
-			margin: 60px 0 25px 0;
-		}
-		.icon-blk3mid {
-			width: 100px;
-			margin: 30px 0 22px 0;
-		}
-		.icon-blk3sml {
-			width: 190px;
-			margin: 20px 0 18px 0;
-		}
+	}
+	li.last {
+		border-right: none;
+	}
+	li:hover {
+		color: $white;
+		background: $teal;
+		opacity: .875;
+		transition: 1s;
+	}
+	.icon-blk3lft {
+		width: 120px;
+		margin: 10% 35%;
+	}
+	.icon-blk3mid {
+		width: 100px;
+		margin: 10% 35%;
+	}
+	.icon-blk3sml {
+		width: 173px;
+		margin: 10% 30%;
 	}
 }
 
