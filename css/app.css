@@ -80,7 +80,7 @@ nav.subMenu a {
   clear: both; }
 
 .block1-bg {
-  height: 364px;
+  height: auto;
   background: #ececec;
   margin: 0;
   padding: 0; }
