@@ -33,7 +33,6 @@ div.logoCtr {
         transition: 1s;
         opacity: .5; }
 
-
 div.bg-teal {
   border-top: 1px solid #93efe2;
   background: #5bc3b4;
@@ -114,7 +113,6 @@ ul.block1 {
     min-height: 242px;
     margin: 0; }
     ul.block1 li img {
-
       width: 90px;
       display: inline;
       float: left;
@@ -295,7 +293,6 @@ ul.innovation-block {
     margin: 0; }
     .blockFooter footer a {
       color: #b4a601; }
-    
     .blockFooter footer a:hover {
       background: #5bc3b4;
       color: white; }
