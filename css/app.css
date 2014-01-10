@@ -27,11 +27,15 @@ div.logoCtr {
     opacity: 0.4;
     z-index: 20; }
     div.logoCtr div.geometric:before a.logo {
+<<<<<<< HEAD
       z-index: 40;
       opacity: 100; }
       div.logoCtr div.geometric:before a.logo img:hover {
         transition: 1s;
         opacity: .5; }
+=======
+      z-index: 40; }
+>>>>>>> 80971033ab3a04a429e71f85f9c92705ce414310
 
 div.bg-teal {
   border-top: 1px solid #93efe2;
@@ -80,6 +84,7 @@ nav.subMenu a {
   clear: both; }
 
 .block1-bg {
+<<<<<<< HEAD
   height: auto;
   margin: 0;
   padding: 0; }
@@ -113,10 +118,25 @@ ul.block1 {
     min-height: 242px;
     margin: 0; }
     ul.block1 li img {
+=======
+  height: 400px;
+  background: #ececec; }
+
+.block1a {
+  float: left;
+  width: 50%; }
+  .block1a div.block1-lft {
+    min-height: 400px;
+    max-height: auto;
+    background-image: url("../img/img-blk1-lft.jpg");
+    background-size: cover; }
+    .block1a div.block1-lft img {
+>>>>>>> 80971033ab3a04a429e71f85f9c92705ce414310
       width: 90px;
       display: inline;
       float: left;
       padding: 0 20px; }
+<<<<<<< HEAD
   ul.block1 li.block1-lft {
     background-image: url("../img/img-blk1-lft.jpg");
     background-size: cover;
@@ -293,6 +313,119 @@ ul.innovation-block {
     margin: 0; }
     .blockFooter footer a {
       color: #b4a601; }
+=======
+    .block1a div.block1-lft h5 {
+      text-transform: uppercase;
+      color: white; }
+    .block1a div.block1-lft p {
+      line-height: 1.5em;
+      color: white;
+      width: 65%;
+      clear: both; }
+    .block1a div.block1-lft a {
+      text-transform: uppercase;
+      color: #efe24e;
+      width: 85%; }
+    .block1a div.block1-lft a:after {
+      content: "\279D";
+      color: #efe24e;
+      margin: 0 0 0 10px; }
+    .block1a div.block1-lft a:hover {
+      background: #5bc3b4;
+      color: white; }
+
+.block1b {
+  float: left;
+  width: 50%; }
+  .block1b div.block1-lft {
+    min-height: 400px;
+    max-height: auto;
+    background-image: url("../img/img-blk1-rt.jpg");
+    background-size: cover; }
+    .block1b div.block1-lft img {
+      width: 100px;
+      display: inline;
+      float: left;
+      padding: 0 20px; }
+    .block1b div.block1-lft h5 {
+      text-transform: uppercase;
+      color: white; }
+    .block1b div.block1-lft p {
+      line-height: 1.5em;
+      color: white;
+      width: 65%;
+      clear: both; }
+    .block1b div.block1-lft a {
+      text-transform: uppercase;
+      color: #efe24e;
+      width: 85%; }
+    .block1b div.block1-lft a:after {
+      content: "\279D";
+      color: #efe24e;
+      margin: 0 0 0 10px; }
+    .block1b div.block1-lft a:hover {
+      background: #5bc3b4;
+      color: white; }
+
+.block2 {
+  clear: both;
+  background: #ececec; }
+  .block2 div.block2Full {
+    height: 216px; }
+    .block2 div.block2Full h3 {
+      text-align: center;
+      color: #89a3ac; }
+    .block2 div.block2Full h6 {
+      color: #b2c2c7;
+      text-transform: lowercase;
+      text-align: center; }
+
+.block3 {
+  height: auto; }
+  .block3 ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+    .block3 ul a {
+      color: #89a3ac;
+      font-size: 1.125rem;
+      font-family: "Brandon";
+      text-transform: uppercase;
+      clear: both;
+      text-align: center; }
+      .block3 ul a li {
+        list-style-type: none;
+        border-right: 1px solid #ececec;
+        padding: 5em;
+        float: left;
+        min-height: 442px;
+        margin: 0; }
+        .block3 ul a li img {
+          padding: 0 0 40px 0; }
+      .block3 ul a li.last {
+        border-right: none; }
+    .block3 ul li:hover {
+      color: white;
+      background: #5bc3b4; }
+    .block3 ul .icon-blk3lft {
+      width: 90px;
+      margin: 30px 0 30px 0; }
+    .block3 ul .icon-blk3mid {
+      width: 100px;
+      margin: 30px 0 22px 0; }
+    .block3 ul .icon-blk3sml {
+      width: 190px;
+      margin: 20px 0 18px 0; }
+
+.blockFooter {
+  background: #efe24e; }
+  .blockFooter footer {
+    height: 70px;
+    text-align: center; }
+    .blockFooter footer a {
+      color: #b4a601;
+      padding: 0 5px; }
+>>>>>>> 80971033ab3a04a429e71f85f9c92705ce414310
     .blockFooter footer a:hover {
       background: #5bc3b4;
       color: white; }
