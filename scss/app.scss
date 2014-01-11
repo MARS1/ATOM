@@ -27,6 +27,12 @@ $white: #ffffff;
 $black: #000000;
 
 
+///////////////////////////////////////
+
+	//HEADER & NAVIGATION
+
+///////////////////////////////////////
+
 
 // Header
 
@@ -49,17 +55,15 @@ div.logoCtr {
 		z-index:20;
 		a.logo {
 			z-index: 40;
+			opacity: 100;
+			img:hover {
+			transition: 1s;
+			opacity: .5;
+			}
 		}
 	}
 }
 
-// 	img:before {
-// 	content: url(img/geometric.png);
-// 	position: absolute;
-// 	top: 0;
-// 	left: -240px;
-// 	opacity: 0.5;
-// }
 
 // Navigation
 
@@ -124,177 +128,306 @@ nav.subMenu {
 	}
 }
 
-// BLOCK 1
+///////////////////////////////////////
+
+	//HOME PAGE
+
+///////////////////////////////////////
+
+//BLOCK 1
+
 .block1-bg {
-	height: 400px;
-	background: $lt-grey;
+	height: auto;
+	margin: 0;
+	padding: 0;
 }
 
-.block1a {
-	float: left;
-	width: 50%;
-	div.block1-lft {
-		min-height: 400px;
-		max-height: auto;
-		background-image: url("../img/img-blk1-lft.jpg");
-		background-size: cover;
+ul.block1 {
+	height: auto;
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	a {
+
+		li.block1-rt {
+			background-image: url("../img/img-blk1-rt.jpg");
+			background-size: cover;
+			min-height: 364px;
+			transition: 1s;
+			padding: 4em;
+		}
+		&:hover {
+			opacity: .875;
+			transition: 1s;
+		}
 		img {
-			width: 90px;
-			display: inline;
-			float: left;
-			padding: 0 20px;
+			margin-top: 10%;
+			margin-bottom: 10%;
 		}
 		h5 {
-		text-transform: uppercase;
-		color: $white;
-		}
-		p {
-			line-height: 1.5em;
-			color: $white;
-			width: 65%;
-			clear: both;
-		}
-		a {
-			text-transform: uppercase;
-			color: $yellow;
-			width: 85%;
-		}
-		a:after {
-			content: "\279D";
-			color: $yellow;
-			margin: 0 0 0 10px;
-		}
-		a:hover {
-			background: $teal;
-			color: $white;
-		}
-	}
-	
-}
-
-.block1b {
-	float: left;
-	width: 50%;
-	div.block1-lft {
-		min-height: 400px;
-		max-height: auto;
-		background-image: url("../img/img-blk1-rt.jpg");
-		background-size: cover;
-		img {
-			width: 100px;
-			display: inline;
-			float: left;
-			padding: 0 20px;
-		}
-		h5 {
-		text-transform: uppercase;
-		color: $white;
-		}
-		p {
-			line-height: 1.5em;
-			color: $white;
-			width: 65%;
-			clear: both;
-		}
-		a {
-			text-transform: uppercase;
-			color: $yellow;
-			width: 85%;
-		}
-		a:after {
-			content: "\279D";
-			color: $yellow;
-			margin: 0 0 0 10px;
-		}
-		a:hover {
-			background: $teal;
-			color: $white;
-		}
-	}
-	
-}
-
-// VIDEO BLOCK
-
-.block2 {
-	clear:both;
-	background: $lt-grey;
-	div.block2Full {
-	height: 216px;
-	a:hover {
-
-		}
-		h3 {
-			text-align: center;
-			color: $grey;
+			margin-top: 10%;
 		}
 		h6 {
-			color: $blue-grey;
-			text-transform: lowercase;
-			text-align: center;
+			text-align: left;
 		}
+	}
+	li  {
+			list-style-type: none;
+			padding: 4em;
+			float: left;
+			min-height: 242px;
+			margin: 0;
+			img {
+			width: 90px;
+			display: inline;
+			float: left;
+			padding: 0 20px;
+			}
+		}
+	li.block1-lft {
+		background-image: url("../img/img-blk1-lft.jpg");
+		background-size: cover;
+		min-height: 364px;
+		a {
+			text-transform: uppercase;
+			color: $yellow;
+			width: 85%;
+		}
+		a:after {
+			content: "\279D";
+			color: $yellow;
+			margin: 0 0 0 10px;
+		}
+		a:hover {
+			background: $teal;
+			color: $white;
+		}
+	}
+	h5 {
+		text-transform: uppercase;
+		color: $white;
+	}
+	h6 {
+		text-align: center;
+	}
+	p {
+			line-height: 1.5em;
+			color: $white;
+			width: 67%;
+			clear: both;
 	}
 }
 
-// 3 BLOCK 
 
-.block3 {
-	height: auto;
-	// clear: both;
-	ul {
-		display: inline-block;
+a.btmLinks {
+	color: $grey;
+	font-size: 1.125rem;
+	font-family: "Brandon";
+	text-transform: uppercase;
+	clear: both;
+	text-align: center;
+	li {
+		list-style-type: none;
+		border-right: 1px solid $lt-grey;
+		padding: 10% 15%;
+		float: left;
+		min-height: 100%;
 		margin: 0;
-		padding: 0;
-		a {
-			color: $grey;
-			font-size: 1.125rem;
-			font-family: "Brandon";
-			text-transform: uppercase;
-			clear: both;
-			text-align: center;
-			// float: left;
+		img {
+			padding: 0;
+		}
+		span {
+			display: block;
+		}
+	}
+	li.last {
+		border-right: none;
+	}
+	li:hover {
+		color: $white;
+		background: $teal;
+		opacity: .875;
+		transition: 1s;
+	}
+	.icon-blk3lft {
+		width: 120px;
+		margin: 10% 35%;
+	}
+	.icon-blk3mid {
+		width: 100px;
+		margin: 10% 35%;
+	}
+	.icon-blk3sml {
+		width: 173px;
+		margin: 10% 30%;
+	}
+}
+
+///////////////////////////////////////
+
+	//INNOVATION PAGE
+
+///////////////////////////////////////
+
+.innovation-body {
+	height: 100%;
+}
+
+.container-innovation {
+	background-image: url("../img/innovation.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top center;
+}
+
+//BLOCK 1
+
+.innovation-block1-bg {
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background-color:rgba(20,0,0,0.6);
+}
+
+.innovation-blk2-bg {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background: $blue;
+	position: relative;
+	img.icon-atom {
+		position: absolute;
+		top: -175px;
+		right: -150px;
+		transition: 1s linear;
+		width: 350px;
+	}
+}
+
+.innovation-blk3-bg {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+ul.innovation-block {
+	height: auto;
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	li.innovation-block {
+		min-height: 364px;
+		transition: 1s;
+		margin: 0;
+		a.a-play {
+			img.play {
+				width: 250px;
+				opacity: .675;
+			}
+			img:hover {
+			background: none;
+			opacity: 1;
+			transition: 1s;
+			}
+		}
+		a:after {
+			content:"";
+		}
+		a:hover {
+			background: none;
+		}
+		ul.inner {
+			padding: 0 0 0 2%;
 			li {
 				list-style-type: none;
-				border-right: 1px solid $lt-grey;
-				padding: 5em;
-				float: left;
-				min-height: 442px;
-				margin: 0;
-				img {
-					padding: 0 0 40px 0;
+				color: $black;
+				font-weight: normal;
+				a {
+				text-transform: uppercase;
+				color: $yellow;
+				width: 85%;
+				}
+
+				a:after {
+					content: "\279D";
+					color: $yellow;
+					margin: 0 0 0 10px;
+				}
+				a:hover {
+					background: $teal;
+					color: $white;
+					transition: 1s;
 				}
 			}
-			li.last {
-				border-right: none;
+			li:before {
+				content: url(../img/svg/arrow-right.svg);
+				width: 10px;
+				padding-right: 10px;
 			}
 		}
-		li:hover {
-			color: $white;
-			background: $teal;
+		ul.dark {
+			li {
+				color: $black;
+			}
 		}
-		.icon-blk3lft {
-			width: 90px;
-			margin: 30px 0 30px 0;
-		}
-		.icon-blk3mid {
-			width: 100px;
-			margin: 30px 0 22px 0;
-		}
-		.icon-blk3sml {
-			width: 190px;
-			margin: 20px 0 18px 0;
+		ul.light {
+			li {
+				color: $mint;
+			}
 		}
 	}
+	li.last-child {
+	}
+
+	h3 {
+		margin-top: 3%;
+		padding: 0;
+		color: $yellow;
+	}
+	p {
+		line-height: 1.5em;
+		color: $white;
+		width: 70%;
+		clear: both;
+		margin-top:1%;
+	}
+	a {
+		text-transform: uppercase;
+		color: $yellow;
+		width: 85%;
+		}
+		a:after {
+			content: "\279D";
+			color: $yellow;
+			margin: 0 0 0 10px;
+		}
+		a:hover {
+			background: $teal;
+			color: $white;
+		}
 }
+
+///////////////////////////////////////
+
+	//FOOTER
+
+///////////////////////////////////////
 
 .blockFooter {
 	background: $yellow;
+	padding: 0;
+	margin: 0;
 	footer {
 		height: 70px;
 		text-align: center;
+		padding: 25px 0 0 0;
+		margin: 0;
 		a {
 			color:$dijon;
-			padding: 0 5px;
 		}
 		a:hover {
 			background: $teal;
@@ -305,6 +438,13 @@ nav.subMenu {
 		}
 	}
 }
+
+
+///////////////////////////////////////
+
+	//MISC
+
+///////////////////////////////////////
 
 // MARGIN AND PADDING
 
