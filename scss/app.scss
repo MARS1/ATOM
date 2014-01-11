@@ -27,12 +27,15 @@ $white: #ffffff;
 $black: #000000;
 
 
+<<<<<<< HEAD
 ///////////////////////////////////////
 
 	//HEADER & NAVIGATION
 
 ///////////////////////////////////////
 
+=======
+>>>>>>> 20e40777650874eabf0870e76e508a4419791797
 
 // Header
 
@@ -55,15 +58,28 @@ div.logoCtr {
 		z-index:20;
 		a.logo {
 			z-index: 40;
+<<<<<<< HEAD
 			opacity: 100;
 			img:hover {
 			transition: 1s;
 			opacity: .5;
 			}
+=======
+>>>>>>> 20e40777650874eabf0870e76e508a4419791797
 		}
 	}
 }
 
+<<<<<<< HEAD
+=======
+// 	img:before {
+// 	content: url(img/geometric.png);
+// 	position: absolute;
+// 	top: 0;
+// 	left: -240px;
+// 	opacity: 0.5;
+// }
+>>>>>>> 20e40777650874eabf0870e76e508a4419791797
 
 // Navigation
 
@@ -128,6 +144,7 @@ nav.subMenu {
 	}
 }
 
+<<<<<<< HEAD
 ///////////////////////////////////////
 
 	//HOME PAGE
@@ -179,16 +196,47 @@ ul.block1 {
 			min-height: 242px;
 			margin: 0;
 			img {
+=======
+// BLOCK 1
+.block1-bg {
+	height: 400px;
+	background: $lt-grey;
+}
+
+.block1a {
+	float: left;
+	width: 50%;
+	div.block1-lft {
+		min-height: 400px;
+		max-height: auto;
+		background-image: url("../img/img-blk1-lft.jpg");
+		background-size: cover;
+		img {
+>>>>>>> 20e40777650874eabf0870e76e508a4419791797
 			width: 90px;
 			display: inline;
 			float: left;
 			padding: 0 20px;
+<<<<<<< HEAD
 			}
 		}
 	li.block1-lft {
 		background-image: url("../img/img-blk1-lft.jpg");
 		background-size: cover;
 		min-height: 364px;
+=======
+		}
+		h5 {
+		text-transform: uppercase;
+		color: $white;
+		}
+		p {
+			line-height: 1.5em;
+			color: $white;
+			width: 65%;
+			clear: both;
+		}
+>>>>>>> 20e40777650874eabf0870e76e508a4419791797
 		a {
 			text-transform: uppercase;
 			color: $yellow;
@@ -204,6 +252,7 @@ ul.block1 {
 			color: $white;
 		}
 	}
+<<<<<<< HEAD
 	h5 {
 		text-transform: uppercase;
 		color: $white;
@@ -428,6 +477,134 @@ ul.innovation-block {
 		margin: 0;
 		a {
 			color:$dijon;
+=======
+	
+}
+
+.block1b {
+	float: left;
+	width: 50%;
+	div.block1-lft {
+		min-height: 400px;
+		max-height: auto;
+		background-image: url("../img/img-blk1-rt.jpg");
+		background-size: cover;
+		img {
+			width: 100px;
+			display: inline;
+			float: left;
+			padding: 0 20px;
+		}
+		h5 {
+		text-transform: uppercase;
+		color: $white;
+		}
+		p {
+			line-height: 1.5em;
+			color: $white;
+			width: 65%;
+			clear: both;
+		}
+		a {
+			text-transform: uppercase;
+			color: $yellow;
+			width: 85%;
+		}
+		a:after {
+			content: "\279D";
+			color: $yellow;
+			margin: 0 0 0 10px;
+		}
+		a:hover {
+			background: $teal;
+			color: $white;
+		}
+	}
+	
+}
+
+// VIDEO BLOCK
+
+.block2 {
+	clear:both;
+	background: $lt-grey;
+	div.block2Full {
+	height: 216px;
+	a:hover {
+
+		}
+		h3 {
+			text-align: center;
+			color: $grey;
+		}
+		h6 {
+			color: $blue-grey;
+			text-transform: lowercase;
+			text-align: center;
+		}
+	}
+}
+
+// 3 BLOCK 
+
+.block3 {
+	height: auto;
+	// clear: both;
+	ul {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		a {
+			color: $grey;
+			font-size: 1.125rem;
+			font-family: "Brandon";
+			text-transform: uppercase;
+			clear: both;
+			text-align: center;
+			// float: left;
+			li {
+				list-style-type: none;
+				border-right: 1px solid $lt-grey;
+				padding: 5em;
+				float: left;
+				min-height: 442px;
+				margin: 0;
+				img {
+					padding: 0 0 40px 0;
+				}
+			}
+			li.last {
+				border-right: none;
+			}
+		}
+		li:hover {
+			color: $white;
+			background: $teal;
+		}
+		.icon-blk3lft {
+			width: 90px;
+			margin: 30px 0 30px 0;
+		}
+		.icon-blk3mid {
+			width: 100px;
+			margin: 30px 0 22px 0;
+		}
+		.icon-blk3sml {
+			width: 190px;
+			margin: 20px 0 18px 0;
+		}
+	}
+}
+
+.blockFooter {
+	background: $yellow;
+	footer {
+		height: 70px;
+		text-align: center;
+		a {
+			color:$dijon;
+			padding: 0 5px;
+>>>>>>> 20e40777650874eabf0870e76e508a4419791797
 		}
 		a:hover {
 			background: $teal;
@@ -439,6 +616,7 @@ ul.innovation-block {
 	}
 }
 
+<<<<<<< HEAD
 
 ///////////////////////////////////////
 
@@ -446,6 +624,8 @@ ul.innovation-block {
 
 ///////////////////////////////////////
 
+=======
+>>>>>>> 20e40777650874eabf0870e76e508a4419791797
 // MARGIN AND PADDING
 
 .mT1 {
